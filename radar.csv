@@ -21,29 +21,29 @@ Astro,Assess,Dependencies,TRUE,"<p>It's hard to believe, but in 2022, the develo
 Gulp,Hold,Dependencies,FALSE,
 TypeScript,Trial,Dependencies,FALSE,
 Turbo,Trial,Dependencies,TRUE,
-Panther,Trial,Dependencies,TRUE,
+Panther,Trial,Dependencies,TRUE,<p>Cypress does a good job but it does mean we have to jump out of PHP into a separate test runner and language to test controllers coded in PHP. Panther allows us to do web-based e2e tests via PHP. This won't necessarily completely replace Cypress but ideally it would do the bulk of the lifting.</p>
 Tailwind,Trial,Dependencies,TRUE,
-ZenStruck Foundry,Trial,Dependencies,TRUE,
+ZenStruck Foundry,Trial,Dependencies,TRUE,"<p>The Arrange step of automated tests can get hairy with the need to maintain test fixtures to represent the various entities used to elicite behaviour we want to Assert. With Foundry, we can more easily create these entities via code so we no longer need to maintain 1-1 mappings between entities & fixtures and can stay in PHP-code headspace when generating the Act portion of tests, keeping those details closer to the test level as opposed to abstracted out in a JSON file.</p>"
 Drupal,Adopt,Platforms,FALSE,
 GitHub,Adopt,Platforms,FALSE,
 Docker,Adopt,Platforms,FALSE,
 MySQL,Adopt,Platforms,FALSE,
 JIRA,Adopt,Platforms,TRUE,
 Confluence,Adopt,Platforms,TRUE,
-RapidKit,Adopt,Platforms,TRUE,
-MDM,Adopt,Platforms,TRUE,
-Backstage,Assess,Platforms,FALSE,"<p>In an increasingly digital world, improving developer effectiveness in large organizations is often a core concern of senior leaders. We've seen enough value with developer portals in general and <strong><a href=""https://backstage.io/"">Backstage</a></strong> in particular that we're happy to recommend it in Adopt. Backstage is an open-source developer portal platform created by Spotify that improves discovery of software assets across the organization. It uses Markdown <a href=""https://backstage.io/docs/features/techdocs/techdocs-overview"">TechDocs</a> that live alongside the code for each service, which nicely balances the needs of centralized discovery with the need for distributed ownership of assets. Backstage supports software templates to accelerate new development and a plugin architecture that allows for extensibility and adaptability into an organization's infrastructure ecosystem. <a href=""https://backstage.io/docs/features/software-catalog/software-catalog-overview"">Backstage Service Catalog</a> uses YAML files to track ownership and metadata for all the software in an organization's ecosystem; it even lets you track third-party SaaS software, which usually requires tracking ownership.</p>"
+RapidKit,Adopt,Platforms,TRUE,"<p>A Drupal starter kit to kick off CMS backed sites. Basic tooling, config, modules, and a default theme will come pre-packaged.</p>"
+MDM,Adopt,Platforms,TRUE,<p>Mobile device management (MDM) is a proven methodology and toolset used to provide a workforce mobile productivity tools and applications while keeping corporate data secure.</p>
+Backstage,Assess,Platforms,TRUE,"<p>In an increasingly digital world, improving developer effectiveness in large organizations is often a core concern of senior leaders. We've seen enough value with developer portals in general and <strong><a href=""https://backstage.io/"">Backstage</a></strong> in particular that we're happy to recommend it in Adopt. Backstage is an open-source developer portal platform created by Spotify that improves discovery of software assets across the organization. It uses Markdown <a href=""https://backstage.io/docs/features/techdocs/techdocs-overview"">TechDocs</a> that live alongside the code for each service, which nicely balances the needs of centralized discovery with the need for distributed ownership of assets. Backstage supports software templates to accelerate new development and a plugin architecture that allows for extensibility and adaptability into an organization's infrastructure ecosystem. <a href=""https://backstage.io/docs/features/software-catalog/software-catalog-overview"">Backstage Service Catalog</a> uses YAML files to track ownership and metadata for all the software in an organization's ecosystem; it even lets you track third-party SaaS software, which usually requires tracking ownership.</p>"
 Kentico (or +X),Assess,Platforms,FALSE,
 Colima,Assess,Platforms,FALSE,"<p><strong><a href=""https://github.com/abiosoft/colima"">Colima</a></strong> is becoming a popular open alternative to Docker Desktop. It provisions the <a href=""/radar/platforms/docker"">Docker</a> container run time in a Lima VM, configures the Docker CLI on macOS and handles port-forwarding and volume mounts. Colima uses <a href=""https://containerd.io/"">containerd</a> as its run time, which is also the run time on most managed <a href=""/radar/platforms/kubernetes"">Kubernetes</a> services Ñ improving the important dev-prod parity. With Colima you can easily use and test the latest features of containerd, such as lazy loading for container images. We've been having good results with Colima in our projects. When in the Kubernetes space, we also use <a href=""https://github.com/containerd/nerdctl"">nerdctl</a>, a Docker-compatible CLI for containerd. Since Kubernetes has deprecated Docker as container run time and most managed-services (EKS, GKE, etc) are following its lead, more people will be looking to containerd native tools, hence the importance of tools like nerdctl. In our opinion, Colima is realizing its strong potential and becoming a go-to option as an alternative to Docker Desktop.</p>"
 Terraform,Assess,Platforms,TRUE,
 Vercel,Assess,Platforms,TRUE,
 GitHub CodeSpaces,Assess,Platforms,TRUE,
 Cloud Envs for Local,Assess,Platforms,TRUE,devzero.io
-Pantheon,Trial,Platforms,FALSE,"<p>Pantheon can speed environment setup, simplify deploys, and enable better multi-site architecture with a shared codebase that can be pushed down to multiple sites</p>"
+Pantheon,Trial,Platforms,FALSE,"<p>Pantheon speeds environment setup, simplifies deploys, and enables better multi-site architecture with a shared codebase that can be pushed down to multiple sites</p>"
 Design System,Trial,Platforms,TRUE,
 Zu Demo Site,Trial,Platforms,TRUE,
 Acquia,Trial,Platforms,TRUE,
-Template Repo,Adopt,Techniques,FALSE,
+Template Repositories,Adopt,Techniques,FALSE,"<p>Successfully kickstarting a project means not having to worry about the setup. To this end, we have templates for new Symfony as well as new Drupal projects (see RapidKit for more details on the latter) to start new projects more quickly and with a common set of tools and modules so we don't need to think about what to install. We just need to think of what we need to develop</p>"
 Tech Diagrams,Adopt,Techniques,TRUE,
 Automated Tests,Adopt,Techniques,TRUE,"<p>While we do write (and run) automated tests, we don't often have the level of coverage that brings full confidence in our ability to confirm functionality and make us feel safe in refactorings or introducing new features. We will set a new benchmark on what level of coverage we want as well as clear definitions on what sort of tests (unit, functional, integration, e2e) we want to utilize to achieve this coverage level</p>"
 User Stories,Adopt,Techniques,TRUE,
