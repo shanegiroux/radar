@@ -23,6 +23,7 @@ React Query,Assess,Dependencies,FALSE,"<p><a href=""https://react-query-v3.tanst
 Turbo,Trial,Dependencies,TRUE,
 Panther,Trial,Dependencies,TRUE,
 Tailwind,Trial,Dependencies,TRUE,
+ZenStruck Foundry,Trial,Dependencies,TRUE,
 RapidKit,Adopt,Platforms,TRUE,
 GitHub Actions,Adopt,Platforms,FALSE,
 MDM,Adopt,Platforms,TRUE,
@@ -92,6 +93,7 @@ JIRA Deployment Integration,Adopt,Tools,TRUE,
 BitWarden,Adopt,Tools,FALSE,
 Grumphp,Adopt,Tools,FALSE,
 PHPCS,Adopt,Tools,FALSE,
+PHP Stan,Adopt,Tools,FALSE,
 AWS Cloud Logs,Assess,Tools,TRUE,
 PaperTrail,Assess,Tools,TRUE,Logs?
 GitHub Copilot,Assess,Tools,TRUE,"<p><strong><a href=""https://github.com/features/copilot"">GitHub Copilot</a></strong> is an AI coding assistant, created by a collaboration between Microsoft and OpenAI. It uses machine learning models to generate suggestions based on the context of what a developer is working on. It features strong IDE integration and uses an existing codebase and editor context to create suggestions. Despite being billed as ""your AI pair programmer"" we would not call what it does ""pairing"" Ñ we'd probably describe it as a kind of supercharged, context-sensitive Stack Overflow. When it correctly predicts what a developer is trying to do, it can be a powerful tool for getting stuff done. Like all LLM-based AIs, though, it has a tendency to hallucinate the use of plausible but nonexistent APIs and may introduce bugs through slightly faulty algorithms. We've had success generating code at the line, block and method level, as well as creating tests or infrastructure configurations. Interestingly, it works best when you use good naming practices, so it encourages more readable code.</p>
