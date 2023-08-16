@@ -2,11 +2,11 @@ name,ring,quadrant,isNew,description
 Cypress,Adopt,Dependencies,FALSE,
 Symfony,Adopt,Dependencies,FALSE,
 NPM,Adopt,Dependencies,FALSE,
-Gulp,Adopt,Dependencies,FALSE,
+Gulp,Hold,Dependencies,FALSE,
 Webpack,Adopt,Dependencies,FALSE,
 PHP,Adopt,Dependencies,FALSE,
 JavaScript,Adopt,Dependencies,FALSE,
-TypeScript,Adopt,Dependencies,FALSE,
+TypeScript,Trial,Dependencies,FALSE,
 Vue,Adopt,Dependencies,FALSE,
 io-ts,Assess,Dependencies,FALSE,"<p>Our teams developing in <a href=""/radar/languages-and-frameworks/typescript"">TypeScript</a> are finding <strong><a href=""https://gcanti.github.io/io-ts/"">io-ts</a></strong> invaluable, especially when interacting with APIs that ultimately result in the creation of objects with specific types. When working with TypeScript, getting data into the bounds of the type system (i.e., from the aforementioned APIs) can lead to run-time errors that can be hard to find and debug. io-ts bridges the gap between compile-time type checking and run-time consumption of external data by providing encode and decode functions. Given the experiences of our teams and the elegance of its approach, we think io-ts is worth adopting.</p>"
 Svelte,Assess,Dependencies,FALSE,"<p>Among web component frameworks, <strong><a href=""https://svelte.dev/"">Svelte</a></strong> stands out by moving reactivity out of the browser and into the compiler. Instead of optimizing DOM updates by using a virtual DOM and browser optimization tricks, Svelte compiles your code into vanilla framework-less JavaScript code that surgically updates the DOM directly. In addition to the run-time performance benefits, this also allows Svelte to optimize the amount of code the browser has to download without sacrificing features for developers; moreover, it's proven to be performant and battery-friendly for mobile web applications as less code has to execute in the browser itself. Performance benefits aside, our teams have appreciated its friendly learning curve and the maintenance benefits that come from <a href=""https://svelte.dev/blog/write-less-code"">writing less code</a>. Svelte itself is only the component framework, but <a href=""https://kit.svelte.dev/"">SvelteKit</a> adds features to build full web applications.</p>"
