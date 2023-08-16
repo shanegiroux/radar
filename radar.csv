@@ -37,6 +37,8 @@ Kentico (or +X),Assess,Platforms,FALSE,
 Colima,Assess,Platforms,FALSE,"<p><strong><a href=""https://github.com/abiosoft/colima"">Colima</a></strong> is becoming a popular open alternative to Docker Desktop. It provisions the <a href=""/radar/platforms/docker"">Docker</a> container run time in a Lima VM, configures the Docker CLI on macOS and handles port-forwarding and volume mounts. Colima uses <a href=""https://containerd.io/"">containerd</a> as its run time, which is also the run time on most managed <a href=""/radar/platforms/kubernetes"">Kubernetes</a> services Ñ improving the important dev-prod parity. With Colima you can easily use and test the latest features of containerd, such as lazy loading for container images. We've been having good results with Colima in our projects. When in the Kubernetes space, we also use <a href=""https://github.com/containerd/nerdctl"">nerdctl</a>, a Docker-compatible CLI for containerd. Since Kubernetes has deprecated Docker as container run time and most managed-services (EKS, GKE, etc) are following its lead, more people will be looking to containerd native tools, hence the importance of tools like nerdctl. In our opinion, Colima is realizing its strong potential and becoming a go-to option as an alternative to Docker Desktop.</p>"
 Terraform,Assess,Platforms,TRUE,
 Vercel,Assess,Platforms,TRUE,
+GitHub CodeSpaces,Assess,Platforms,TRUE,
+Cloud Envs for Local,Assess,Platforms,TRUE,devzero.io
 Pantheon,Trial,Platforms,FALSE,"<p>Pantheon can speed environment setup, simplify deploys, and enable better multi-site architecture with a shared codebase that can be pushed down to multiple sites</p>"
 Design System,Trial,Platforms,TRUE,
 Zu Demo Site,Trial,Platforms,TRUE,
@@ -82,6 +84,7 @@ Grumphp,Adopt,Tools,FALSE,
 PHP CS,Adopt,Tools,FALSE,
 PHP Stan,Adopt,Tools,FALSE,
 GitHub Actions,Adopt,Tools,FALSE,
+Ansible,Adopt,Tools,FALSE,<p>Infrastructure as code solution for provisioning and maintaining servers</p>
 JIRA Deployment Integration,Adopt,Tools,TRUE,
 AWS Cloud Logs,Assess,Tools,TRUE,
 PaperTrail,Assess,Tools,TRUE,Logs?
@@ -93,8 +96,7 @@ Obsidian,Assess,Tools,TRUE,"<p>Knowledge management is critical for tech workers
 <p>Obsidian has a rich repository of community plugins. Some that have caught our attention, in particular, are <a href=""https://obsidian.md/canvas"">Canvas</a>, akin to a local version of Miro or Mural, and <a href=""https://github.com/blacksmithgu/obsidian-dataview"">Dataview</a>, which effectively treats your notes as a database and provides a query language for filtering, sorting and extracting data from your markdown notes.</p>"
 iamlive,Assess,Tools,TRUE,"<p>Creating exactly the minimum viable AWS IAM policies we want, according to the <a href=""https://en.wikipedia.org/wiki/Principle_of_least_privilege"">principle of least privilege</a>, can be a long journey of trial and error. <strong><a href=""https://github.com/iann0036/iamlive"">iamlive</a></strong> can shorten that journey considerably. It monitors the AWS CLI calls made from a machine and determines the policies needed to execute those calls. The tool generates a policy document with statements, actions, principals and resources that can be used as a good starting point. We've found it particularly useful to create policies needed in CI/CD pipelines that provision infrastructure, reducing the usual back and forth after a <a href=""/radar/tools/terraform"">Terraform</a> run fails because the IAM role's policy is insufficient.</p>"
 CodeRabbit,Assess,Tools,TRUE,
+Capistrano,Hold,Tools,FALSE,<p>Phasing out in favor of GitHub Actions</p>
 ChatGPT,Trial,Tools,TRUE,
 FigJam,Trial,Tools,TRUE,
 CyberArk,Trial,Tools,TRUE,
-GitHub CodeSpaces,Assess,Platforms,TRUE,
-Cloud Envs for Local,Assess,Platforms,TRUE,devzero.io
